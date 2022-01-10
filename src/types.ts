@@ -2,7 +2,7 @@ export type IUrlParamsType = {
   [key: string]: string | number | undefined;
 };
 
-export type IGoGoAnimeConfig = {
+export type IAnimeConfig = {
   baseUrl: string;
   apiBaseUrl: string;
 };

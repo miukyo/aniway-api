@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from 'axios';
 import { Cheerio, load as cheerioLoad, Root } from 'cheerio';
 import { DEFAULT_CONFIG } from './constants';
 import {
-  IGoGoAnimeConfig,
+  IAnimeConfig,
   IAnimeBasic,
   IEntity,
   IEntityBasic,
@@ -17,14 +17,14 @@ import {
 } from './types';
 import { getIdFromPath } from './utils';
 
-export default class GoGoAnime {
+export default class animeFetcher {
   /** @internal */
   private readonly baseUrl: string;
 
   /** @internal */
   private readonly apiBaseUrl: string;
 
-  constructor(config?: IGoGoAnimeConfig) {
+  constructor(config?: IAnimeConfig) {
     const { baseUrl, apiBaseUrl } = {
       ...DEFAULT_CONFIG,
       ...config

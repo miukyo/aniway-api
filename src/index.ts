@@ -1,5 +1,5 @@
-import GoGoAnime from './gogoAnime';
+import animeFetcher from './fetcher';
 
-export { GoGoAnime };
+export { animeFetcher };
 export * from './constants';
 export * from './types';
