@@ -736,7 +736,7 @@ export default class animeFetcher {
     videoId: string,
     axiosConfig?: AxiosRequestConfig
   ): Promise<IVideoRes> {
-    const link = this.getUrl('https://gogo-play.net', '/ajax.php', {
+    const link = this.getUrl('https://gogoplay1.com', '/ajax.php', {
       id: videoId,
       refer: this.baseUrl
     });
@@ -744,7 +744,7 @@ export default class animeFetcher {
       ...axiosConfig,
       headers: {
         ...axiosConfig?.headers,
-        referer: `https://gogo-play.net/streaming.php?id=${videoId}`,
+        referer: `https://gogoplay1.com/streaming.php?id=${videoId}`,
         'user-agent':
           'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'
       }
@@ -752,6 +752,8 @@ export default class animeFetcher {
 
     return res.data;
   }
+
+  
 
   /** @ignore */
   getUrlWithBase(path: string, params?: IUrlParamsType): string {

@@ -1,11 +1,11 @@
 {
-  "name": "aniway-api",
-  "version": "0.0.1",
+  "name": "aniwayscrap-api",
+  "version": "0.0.7",
   "description": "aniway | GoGoAnime Scrapper API.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/GyanendroKh/gogoanime-api",
-  "author": "GyanendroKh",
+  "repository": "https://github.com/Miuuwu/aniway-api",
+  "author": "Miuuwu",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
