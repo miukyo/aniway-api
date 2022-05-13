@@ -1,7 +1,7 @@
 import { IAnimeConfig } from './types';
 
 export const DEFAULT_CONFIG: IAnimeConfig = {
-  baseUrl: 'https://www3.gogoanime.cm',
+  baseUrl: 'https://ww2.gogoanimes.org',
   apiBaseUrl: 'https://ajax.gogo-load.com'
 };
 
